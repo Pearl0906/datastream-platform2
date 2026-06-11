@@ -1,0 +1,38 @@
+steps:
+  # Step 1: Terraform init
+  - name: "hashicorp/terraform:1.5.0"
+    entrypoint: "sh"
+    args:
+      - "-c"
+      - |
+        cd terraform
+        terraform init
+
+  # Step 2: Format check
+  - name: "hashicorp/terraform:1.5.0"
+    entrypoint: "sh"
+    args:
+      - "-c"
+      - |
+        cd terraform
+        terraform fmt -check
+
+  # Step 3: Validate
+  - name: "hashicorp/terraform:1.5.0"
+    entrypoint: "sh"
+    args:
+      - "-c"
+      - |
+        cd terraform
+        terraform validate
+
+  # Step 4: Plan (no apply for safety)
+  - name: "hashicorp/terraform:1.5.0"
+    entrypoint: "sh"
+    args:
+      - "-c"
+      - |
+        cd terraform
+        terraform plan -no-color
+
+timeout: 1200s
