@@ -1,0 +1,11 @@
+sale_id,customer_name,product,quantity,amount,sale_date
+1,John Smith,Laptop,1,12000,2026-06-01
+2,Sarah Jones,Mouse,2,500,2026-06-02
+3,David Brown,Keyboard,1,800,2026-06-03
+4,Linda White,Monitor,1,3500,2026-06-04
+5,James Green,USB Drive,3,450,2026-06-05
+6,Mary Black,Printer,1,2500,2026-06-06
+7,Peter Gray,Headset,2,900,2026-06-07
+8,Lucy Adams,Webcam,1,700,2026-06-08
+9,Tom Wilson,Desk Chair,1,2800,2026-06-09
+10,Alice King,Laptop Bag,1,600,2026-06-10
